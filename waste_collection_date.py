@@ -15,12 +15,12 @@ with open('/home/zhangyao/mypython/apps/waste_collection_date/waste_collection_d
             # Send email
             print('Sending email...')
             mail_host = 'smtp.126.com'
-            mail_username = 'zy_onlooker@126.com'
+            mail_username = ''
             with open('/home/zhangyao/mypython/apps/waste_collection_date/email_pwd.txt', 'r') as pwd:
                 mail_auth_password = pwd.read().strip('\n')
 
-            sender = 'zy_onlooker@126.com'
-            receivers = 'zy_onlooker@126.com, 819357683@qq.com'
+            sender = ''
+            receivers = ''
             #receivers = 'zy_onlooker@126.com'
 
             message = MIMEText('Waste in GREY BIN and RECYCLING BOXES will be collected tomorrow!\n\n------尧之助', 'plain', 'utf-8')
@@ -52,14 +52,14 @@ with open('/home/zhangyao/mypython/apps/waste_collection_date/waste_collection_d
                                 body="Waste in GREY BIN and RECYCLING BOXES will be collected tomorrow!\n\n------尧之助.",
                                 #body="Waste in GREY BIN and RECYCLING BOXES will be collected today!\n\n------尧之助.",
                                 from_='+17607480468',
-                                to='+447729884941'
+                                to=''
                       )
             message = client.messages \
                             .create(
                                 body="Waste in GREY BIN and RECYCLING BOXES will be collected tomorrow!\n\n------尧之助.",
                                 #body="Waste in GREY BIN and RECYCLING BOXES will be collected today!\n\n------尧之助.",
                                 from_='+17607480468',
-                                to='+447561558467'
+                                to=''
                       )
             print('SMS has been sent successfully.')
             break
