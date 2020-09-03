@@ -21,10 +21,8 @@ with open('/home/zhangyao/mypython/apps/waste_collection_date/waste_collection_d
 
             sender = ''
             receivers = ''
-            #receivers = 'zy_onlooker@126.com'
 
             message = MIMEText('Waste in GREY BIN and RECYCLING BOXES will be collected tomorrow!\n\n------尧之助', 'plain', 'utf-8')
-            #message = MIMEText('Waste in GREY BIN and RECYCLING BOXES will be collected today!\n\n------尧之助', 'plain', 'utf-8')
             message['From'] = sender
             message['To'] =  receivers
             message['Subject'] = "Waste Collection Reminder."
@@ -57,7 +55,6 @@ with open('/home/zhangyao/mypython/apps/waste_collection_date/waste_collection_d
             message = client.messages \
                             .create(
                                 body="Waste in GREY BIN and RECYCLING BOXES will be collected tomorrow!\n\n------尧之助.",
-                                #body="Waste in GREY BIN and RECYCLING BOXES will be collected today!\n\n------尧之助.",
                                 from_='+17607480468',
                                 to=''
                       )
