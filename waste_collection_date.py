@@ -49,13 +49,13 @@ with open('/home/zhangyao/mypython/apps/waste_collection_date/waste_collection_d
                             .create(
                                 body="Waste in GREY BIN and RECYCLING BOXES will be collected tomorrow!\n\n------尧之助.",
                                 #body="Waste in GREY BIN and RECYCLING BOXES will be collected today!\n\n------尧之助.",
-                                from_='+17607480468',
+                                from_='',
                                 to=''
                       )
             message = client.messages \
                             .create(
                                 body="Waste in GREY BIN and RECYCLING BOXES will be collected tomorrow!\n\n------尧之助.",
-                                from_='+17607480468',
+                                from_='',
                                 to=''
                       )
             print('SMS has been sent successfully.')
